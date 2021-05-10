@@ -11,11 +11,12 @@ body {
   /* border-bottom: 3px solid black; */
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 2%;
+  align-items: center;
+  margin-bottom: 1%;
   overflow: hidden;
 }
 .brand-name {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   flex: 2;
 }
@@ -28,7 +29,7 @@ body {
 }
 .nav-bar li {
   display: inline;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   margin: 8px;
 }
@@ -59,6 +60,26 @@ body {
 
 .footer-container p {
   color: #e5e5e5;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+  .nav-bar {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 1%;
+  }
+  .nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    align-content: center;
+    text-align: center;
+  }
+  .nav-bar li {
+    display: block;
+  }
 }

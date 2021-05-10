@@ -1,6 +1,12 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 .contact-container {
   display: flex;
-  align-content: center;
+  flex-shrink: inherit;
+  align-items: center;
   justify-content: center;
 }
 
@@ -8,7 +14,6 @@
   border: 4px solid #333;
   width: max-content;
   height: max-content;
-  box-shadow: 2px #fff;
 }
 
 .message-container div {
@@ -16,7 +21,7 @@
 }
 
 .message-container h2 {
-  font-size: 32px;
+  font-size: 2rem;
   text-decoration: underline;
   text-align: center;
 }
@@ -38,7 +43,7 @@ textarea {
 }
 
 label {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -64,4 +69,8 @@ label {
 .input-box {
   display: block;
   height: 36px;
+}
+
+.input-empty-error {
+  border: 2px solid red;
 }

@@ -21,16 +21,15 @@
       <div class="contact-container">
         <div class="message-container">
           <h2>Contact Me</h2>
-          <form class="message-form" action="#" method="POST">
+          <form id="contact-form" class="message-form" action="contact.html">
             <div class="name-input">
               <label for="guestName">Full Name</label>
               <input
                 class="contact-input input-box"
                 type="text"
-                name="guestName"
+                id="guestName"
                 autocomplete="off"
                 placeholder="Enter Your Name"
-                required
               />
             </div>
             <div class="email-input">
@@ -39,20 +38,18 @@
                 class="contact-input input-box"
                 type="email"
                 autocomplete="off"
-                name="guestEmail"
+                id="guestEmail"
                 placeholder="Enter Your Email"
-                required
               />
             </div>
             <div class="message-input">
-              <label for="message">Message :</label>
+              <label for="guestMessage">Message :</label>
               <textarea
                 class="contact-input"
                 placeholder="Drop your Message Here..."
                 rows="5"
                 cols="48"
-                name="message"
-                required
+                id="guestMessage"
               ></textarea>
             </div>
             <div class="relation-input">
@@ -64,19 +61,25 @@
               </select>
             </div>
             <div class="submit-message">
-              <button class="submit-button" type="submit" name="form-submit">
+              <button
+                class="submit-button"
+                onclick="return validate()"
+                type="submit"
+                name="form-submit"
+              >
                 Send Message
               </button>
             </div>
           </form>
         </div>
-        <footer>
-          <div class="footer-container">
-            <p>Made with ❤️ by Yaswanth Sai</p>
-          </div>
-        </footer>
       </div>
+      <div><h1>....</h1></div>
+      <footer>
+        <div class="footer-container">
+          <p>Made with ❤️ by Yaswanth Sai</p>
+        </div>
+      </footer>
+      <script type="text/javascript" src="../js/inputValidcheck.js"></script>
     </div>
-    <script src=""></script>
   </body>
 </html>

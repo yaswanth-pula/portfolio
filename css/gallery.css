@@ -7,15 +7,24 @@
 
 .image-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, auto);
   /* column-gap: 1em;
   row-gap: 1em;*/
   gap: 1em;
 }
 
 img {
-  width: 400px;
+  width: 25vw;
   height: 400px;
   object-fit: cover;
   border-radius: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .image-container {
+    grid-template-columns: auto;
+  }
+  img {
+    width: 90vw;
+  }
 }
