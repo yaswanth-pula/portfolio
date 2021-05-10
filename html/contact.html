@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/nav-footer.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div id="root">
+      <nav class="nav-bar">
+        <span class="brand-name">Yaswanth Sai</span>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="contact-container">
+        <div class="message-container">
+          <h2>Contact Me</h2>
+          <form class="message-form" action="#" method="POST">
+            <div class="name-input">
+              <label for="guestName">Full Name</label>
+              <input
+                class="contact-input input-box"
+                type="text"
+                name="guestName"
+                autocomplete="off"
+                placeholder="Enter Your Name"
+                required
+              />
+            </div>
+            <div class="email-input">
+              <label for="guestEmai">Email</label>
+              <input
+                class="contact-input input-box"
+                type="email"
+                autocomplete="off"
+                name="guestEmail"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <div class="message-input">
+              <label for="message">Message :</label>
+              <textarea
+                class="contact-input"
+                placeholder="Drop your Message Here..."
+                rows="5"
+                cols="48"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="relation-input">
+              <label for="relationSelect">How Do I Know You As : </label>
+              <select name="relationSelect" class="contact-input">
+                <option value="Friend">Friend</option>
+                <option value="Collegue">Colleague</option>
+                <option value="Unknown">Stranger</option>
+              </select>
+            </div>
+            <div class="submit-message">
+              <button class="submit-button" type="submit" name="form-submit">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+        <footer>
+          <div class="footer-container">
+            <p>Made with ❤️ by Yaswanth Sai</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src=""></script>
+  </body>
+</html>

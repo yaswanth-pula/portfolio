@@ -1,0 +1,52 @@
+#root {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+
+.about-image {
+  width: 100vw;
+  height: 40vh;
+}
+.about-image img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
+
+.about-heading p {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.about-content {
+  margin: 2% 10%;
+}
+
+article h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+article p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+article ul {
+  list-style: none;
+}
+article li {
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.topic-separator {
+  text-align: center;
+}
+.topic-separator p {
+  font-size: 36px;
+  font-weight: 800;
+  color: #000;
+}
