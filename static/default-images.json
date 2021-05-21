@@ -1,0 +1,13 @@
+{
+  "images": [
+    {
+      "url": "../images/gallery/food_img1.jpg"
+    },
+    {
+      "url": "../images/gallery/food_img2.jpg"
+    },
+    {
+      "url": "../images/gallery/food_img3.jpg"
+    }
+  ]
+}

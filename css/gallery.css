@@ -8,9 +8,9 @@
 .image-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  /* column-gap: 1em;
-  row-gap: 1em;*/
-  gap: 1em;
+  column-gap: 1em;
+  row-gap: 2em;
+  /* gap: 1em; */
 }
 
 img {
@@ -18,6 +18,32 @@ img {
   height: 400px;
   object-fit: cover;
   border-radius: 12px;
+}
+.add-image {
+  display: flex;
+  /* height: 5vh; */
+  margin-bottom: 1%;
+  align-content: center;
+  justify-content: center;
+}
+.add-image button {
+  color: #333;
+  padding: 12px;
+  background: #86f0b9;
+  border-radius: 8px;
+  border-color: #86f0b9;
+  box-shadow: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.add-image button:hover {
+  background: #e5e5e5;
+  border: 2px solid #86f0b9;
+}
+
+h1 {
+  opacity: 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -27,4 +53,83 @@ img {
   img {
     width: 90vw;
   }
+}
+
+.pic-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: #000 0.5s ease;
+  border-radius: 8px;
+}
+
+.pic-container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.view-btn {
+  position: absolute;
+  width: 25vw;
+  left: 0;
+  top: 25%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.view-btn a {
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+  background-color: skyblue;
+  text-decoration: none;
+}
+
+.view-btn a:hover {
+  background-color: #eee;
+  border: solid 2px skyblue;
+  color: skyblue;
+}
+.pic-container:hover .view-btn {
+  opacity: 1;
+}
+
+.delete-btn {
+  position: absolute;
+  width: 25vw;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.delete-btn input {
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+  background-color: tomato;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete-btn input:hover {
+  background-color: #eee;
+  border: solid 2px tomato;
+  color: tomato;
+}
+
+.pic-container:hover .delete-btn {
+  opacity: 1;
 }

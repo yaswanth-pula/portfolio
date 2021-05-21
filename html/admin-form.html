@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/contact.css" />
     <link rel="stylesheet" href="../css/nav-footer.css" />
-    <title>Contact</title>
+    <title>Add New Image</title>
   </head>
   <body>
     <div id="root">
@@ -20,54 +20,56 @@
       </nav>
       <div class="contact-container">
         <div class="message-container">
-          <h2>Contact Me</h2>
-          <form id="contact-form" class="message-form" action="contact.html">
-            <div class="name-input">
-              <label for="guestName">Full Name</label>
+          <h2>Add New Image</h2>
+          <form
+            id="contact-form"
+            class="message-form"
+            action="./admin-gallery.html"
+            method="GET"
+          >
+            <div>
+              <label for="image-local">From Local Device</label>
+              <input
+                id="image-local"
+                type="file"
+                class="contact-input"
+                accept="image/*"
+              />
+            </div>
+            <h2>OR</h2>
+            <div class="image-url-input">
+              <label for="freshImageUrl">Image Url</label>
+              <input
+                class="contact-input input-box"
+                type="url"
+                id="freshImageUrl"
+                autocomplete="off"
+                placeholder="Enter Image Url"
+              />
+            </div>
+            <div class="image-name-input">
+              <label for="freshImageName">Name</label>
               <input
                 class="contact-input input-box"
                 type="text"
-                id="guestName"
                 autocomplete="off"
-                placeholder="Enter Your Name"
+                id="freshImageName"
+                placeholder="Enter Image Name"
               />
             </div>
-            <div class="email-input">
-              <label for="guestEmai">Email</label>
-              <input
-                class="contact-input input-box"
-                type="email"
-                autocomplete="off"
-                id="guestEmail"
-                placeholder="Enter Your Email"
-              />
+            <div class="image-date-input">
+              <label for="uploadDate">Upload Date</label>
+              <input id="uploadDate" type="date" class="contact-input" />
             </div>
-            <div class="message-input">
-              <label for="guestMessage">Message :</label>
-              <textarea
-                class="contact-input"
-                placeholder="Drop your Message Here..."
-                rows="5"
-                cols="36"
-                id="guestMessage"
-              ></textarea>
-            </div>
-            <div class="relation-input">
-              <label for="relationSelect">How Do I Know You As : </label>
-              <select name="relationSelect" class="contact-input">
-                <option value="Friend">Friend</option>
-                <option value="Collegue">Colleague</option>
-                <option value="Unknown">Stranger</option>
-              </select>
-            </div>
+
             <div class="submit-message">
               <button
+                id="save-image"
                 class="submit-button"
-                onclick="return validateContact()"
                 type="submit"
                 name="form-submit"
               >
-                Send Message
+                Save Image
               </button>
             </div>
           </form>
@@ -79,7 +81,8 @@
           <p>Made with ❤️ by Yaswanth Sai</p>
         </div>
       </footer>
-      <script type="text/javascript" src="../js/inputValidcheck.js"></script>
+      <!-- <script type="text/javascript" src="../js/inputValidcheck.js"></script> -->
+      <script type="module" src="../js/adminImageForm.js"></script>
     </div>
   </body>
 </html>
